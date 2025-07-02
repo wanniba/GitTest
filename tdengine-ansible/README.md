@@ -13,6 +13,8 @@ This project provides Ansible playbooks and roles for deploying a three-node TDe
 1. Install Ansible on your control machine.
 2. Update the inventory under `inventories/<env>/hosts` with the real host IPs or names.
 3. Set environment-specific variables in `inventories/<env>/group_vars/all.yml`.
+4. Ensure target hosts can reach the official TDengine repository. The role
+   automatically adds the apt repository and installs the package.
 
 ### Deploy
 
