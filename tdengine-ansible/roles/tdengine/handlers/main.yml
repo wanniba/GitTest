@@ -1,0 +1,6 @@
+---
+- name: restart tdengine
+  service:
+    name: tdengine
+    state: restarted
+  become: yes

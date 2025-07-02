@@ -1,0 +1,7 @@
+---
+- hosts: tdengine
+  become: yes
+  roles:
+    - role: tdengine
+      vars:
+        tdengine_action: remove

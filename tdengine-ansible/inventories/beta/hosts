@@ -1,0 +1,4 @@
+[tdengine]
+node1-beta ansible_host=10.0.1.1
+node2-beta ansible_host=10.0.1.2
+node3-beta ansible_host=10.0.1.3

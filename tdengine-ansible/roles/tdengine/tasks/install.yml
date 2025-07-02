@@ -1,0 +1,20 @@
+---
+- name: Install tdengine package
+  apt:
+    name: tdengine
+    state: present
+  become: yes
+
+- name: Configure tdengine
+  template:
+    src: tdengine.conf.j2
+    dest: /etc/tdengine/tdengine.conf
+  notify: restart tdengine
+  become: yes
+
+- name: Ensure tdengine service is started
+  service:
+    name: tdengine
+    state: started
+    enabled: yes
+  become: yes

@@ -1,0 +1,7 @@
+---
+# This file includes install or remove tasks depending on action
+- import_tasks: install.yml
+  when: tdengine_action | default('install') == 'install'
+
+- import_tasks: remove.yml
+  when: tdengine_action | default('install') == 'remove'

@@ -1,0 +1,18 @@
+---
+- name: Stop tdengine service
+  service:
+    name: tdengine
+    state: stopped
+  become: yes
+
+- name: Remove tdengine package
+  apt:
+    name: tdengine
+    state: absent
+  become: yes
+
+- name: Remove configuration file
+  file:
+    path: /etc/tdengine/tdengine.conf
+    state: absent
+  become: yes

@@ -1,0 +1,4 @@
+[tdengine]
+node1-alpha ansible_host=10.0.0.1
+node2-alpha ansible_host=10.0.0.2
+node3-alpha ansible_host=10.0.0.3

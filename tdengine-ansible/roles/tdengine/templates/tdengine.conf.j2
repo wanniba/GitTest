@@ -1,0 +1,4 @@
+# Example tdengine configuration
+serverPort = {{ tdengine_server_port | default(6030) }}
+firstEp = {{ tdengine_first_ep | default(groups['tdengine'][0]) }}:6030
+rootPwd = {{ tdengine_root_pwd | default('taosdata') }}
