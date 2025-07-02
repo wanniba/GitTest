@@ -1,4 +1,21 @@
 ---
+- name: Add TDengine apt repository key
+  apt_key:
+    url: https://repos.taosdata.com/TDengine-release/TDengine-GPG-KEY-public
+    state: present
+  become: yes
+
+- name: Add TDengine apt repository
+  apt_repository:
+    repo: "deb [arch=amd64] https://repos.taosdata.com/TDengine-release/ stable main"
+    state: present
+  become: yes
+
+- name: Update apt cache
+  apt:
+    update_cache: yes
+  become: yes
+
 - name: Install tdengine package
   apt:
     name: tdengine
