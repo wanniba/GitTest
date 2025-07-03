@@ -1,1 +1,3 @@
 tdengine_root_pwd: "alpha_pass"
+tdengine_first_ep: h1.taosdata.com
+tdengine_server_port: 6030
