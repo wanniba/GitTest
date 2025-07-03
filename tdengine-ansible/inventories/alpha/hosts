@@ -1,4 +1,4 @@
 [tdengine]
-node1-alpha ansible_host=10.0.0.1
-node2-alpha ansible_host=10.0.0.2
-node3-alpha ansible_host=10.0.0.3
+node1-alpha ansible_host=10.0.0.1 tdengine_fqdn=h1.taosdata.com
+node2-alpha ansible_host=10.0.0.2 tdengine_fqdn=h2.taosdata.com
+node3-alpha ansible_host=10.0.0.3 tdengine_fqdn=h3.taosdata.com
